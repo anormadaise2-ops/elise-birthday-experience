@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#130b16">
+  <meta name="description" content="Une expérience d'anniversaire créée spécialement pour Élise.">
+  <title>Joyeux anniversaire Élise ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="ambient ambient--one" aria-hidden="true"></div><div class="ambient ambient--two" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Accueil"><span class="brand-mark">E</span><span>Élise <i>· anniversaire</i></span></a>
+    <nav aria-label="Navigation principale"><a href="#home">Accueil</a><a href="#message">Le message</a><a href="#souvenir">Souvenir</a><a href="#credits">Crédits</a></nav>
+    <button class="music-pill" id="musicToggle" type="button" aria-pressed="false"><span class="music-icon">♫</span><span><b id="musicLabel">Lancer la musique</b><small>Une ambiance rien que pour toi</small></span><span class="play-symbol" id="playSymbol">▶</span></button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> UN JOUR QUI T'APPARTIENT <span></span></p>
+        <h1>Joyeux<br><em>anniversaire</em><br><span>Élise</span><b class="heart">♡</b></h1>
+        <p class="intro">Aujourd'hui, le monde mérite de ralentir un instant pour célébrer une personne qui rend les journées plus belles, simplement en étant elle-même.</p>
+        <div class="hero-actions"><a class="button button--primary" href="#message">Découvrir ton message <span>↗</span></a><button class="button button--quiet" id="confettiBtn" type="button">✦ Lancer des étoiles</button></div>
+        <div class="signature"><span class="signature-line"></span><span>Une petite attention, avec beaucoup de cœur.</span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Illustration d'anniversaire">
+        <div class="art-glow"></div><div class="orbit orbit--one"></div><div class="orbit orbit--two"></div>
+        <div class="art-card"><img src="assets/images/ambiance-anniversaire.png" alt="Décor festif d'anniversaire avec fleurs, gâteau et lumières" loading="eager"><div class="art-caption"><span>UNE JOURNÉE SPÉCIALE</span><strong>Pour toi, Élise <b>♡</b></strong></div></div>
+        <span class="floating-note note--top">✧ made with love</span><span class="floating-note note--bottom">que du bonheur ♡</span><span class="spark spark--1">✦</span><span class="spark spark--2">✧</span><span class="spark spark--3">✦</span>
+      </div>
+      <a class="scroll-hint" href="#message"><span></span> FAIS DÉFILER POUR LA SURPRISE</a>
+    </section>
+    <section class="message-section section" id="message">
+      <div class="section-heading reveal"><p class="eyebrow">QUELQUES MOTS POUR TOI</p><h2>Parce que tu <em>le mérites.</em></h2><p>Ce n'est pas juste une date sur le calendrier. C'est une occasion de te rappeler à quel point tu comptes.</p></div>
+      <article class="letter reveal"><div class="letter-top"><span>UNE LETTRE POUR ÉLISE</span><span>♡</span></div><div class="letter-body"><p class="letter-hello">Coucou Élise,</p><p>Je te souhaite un anniversaire rempli de petits bonheurs, de rires sincères et de moments que tu auras envie de garder longtemps en mémoire.</p><p>Que cette nouvelle année t'apporte de belles surprises, des projets qui te font vibrer, des personnes qui te veulent du bien et mille raisons de sourire. N'oublie jamais que tu mérites le meilleur, aujourd'hui comme tous les autres jours.</p><p>Profite à fond de ta journée. Aujourd'hui, c'est ton moment. ✨</p><p class="letter-sign">Avec toute mon amitié, <span>♡</span></p></div><div class="letter-stamp">POUR TOI<br>AVEC ♥</div></article>
+    </section>
+    <section class="memory-section section" id="souvenir">
+      <div class="memory-copy reveal"><p class="eyebrow">UN PETIT SOUVENIR</p><h2>Les beaux moments<br><em>restent avec nous.</em></h2><p>Une image, une chanson, quelques mots… Parfois, les choses les plus simples deviennent les souvenirs les plus précieux.</p><button class="button button--primary" id="surpriseBtn" type="button">Ouvrir une surprise <span>✧</span></button></div>
+      <div class="memory-frame reveal"><div class="memory-image"><img src="assets/images/photo-elise-a-ajouter.jpg" id="elisePhoto" alt="Photo souvenir à ajouter pour Élise"><div class="photo-placeholder" id="photoPlaceholder"><span>✧</span><b>TON SOUVENIR ICI</b><small>Ajoute ta photo dans assets/images/</small></div></div><div class="memory-label"><span>UNE IMAGE À GARDER</span><span>01 / 01</span></div></div>
+    </section>
+    <section class="closing section reveal"><div class="closing-star">✧</div><p class="eyebrow">AVANT DE REFERMER CETTE PAGE</p><h2>Que cette année soit<br><em>douce et lumineuse.</em></h2><p>Joyeux anniversaire, Élise. Que le meilleur soit encore à venir. ♡</p><button class="button button--outline" id="againBtn" type="button">Revivre la célébration ↗</button><div class="closing-dots"><i></i><i></i><i></i></div></section>
+  </main>
+  <footer id="credits"><div class="footer-main"><a class="brand" href="#home"><span class="brand-mark">E</span><span>Élise <i>· anniversaire</i></span></a><p>Imaginé avec soin, créé pour faire sourire.</p><a href="#home" class="back-top">Retour en haut ↑</a></div><div class="credits"><div class="creator"><img src="assets/images/aizen-createur.png" alt="Avatar Aizen du créateur"><div><small>CRÉATEUR</small><strong>Appia Karl David</strong></div></div><div class="credit-divider"></div><div class="credit-text"><small>CONCEPTION & DESIGN</small><strong>Raphaël Turpin</strong></div><span class="copyright">© <span id="year"></span> · Fait avec ♡</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal" id="surpriseModal" aria-hidden="true"><div class="modal-backdrop" data-close></div><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="closeModal" type="button" aria-label="Fermer">×</button><span class="modal-icon">✧</span><p class="eyebrow">UNE PETITE SURPRISE</p><h2 id="modalTitle">Un vœu pour toi</h2><p id="wishText">Que chaque nouvelle journée te donne une raison de sourire.</p><button class="button button--primary" id="newWish" type="button">Encore un vœu ↻</button></div></div>
+  <audio id="birthdayAudio" src="assets/audio/musique-anniversaire.mp3" preload="metadata" loop></audio>
+</body>
+</html>
